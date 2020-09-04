@@ -1,0 +1,31 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+.row__poster {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__poster_image {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  /* if ever mag change ang size sa image mag add og kane nga transitions */
+  transition: transform 450ms;
+}
+
+.row__poster_image:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+.row__poster_image__large {
+  max-height: 250px;
+}
+.row__poster_image__large:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
